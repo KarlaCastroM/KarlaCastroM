@@ -1,0 +1,73 @@
+---
+title: "Proyecto Fin de Curso"
+author: "Karla  Castro M"
+date: "20/7/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(readxl)
+library(ggplot2)
+library(kableExtra)
+library(pander)
+library(dplyr)
+library(knitr)
+library(lmtest)
+library(car)
+library(psych)
+library(MVN)
+```
+
+
+# Título del proyecto
+## Comparacion del crecimiento de trucha arcoiris (*Oncorhynchus mykiss*) con tres tipos de dietas diferentes.
+
+# Autor.
+## Karla Castro Monje
+
+# Planteamiento del problema
+## El beneficio economico de la acuicultura intensiva y semi-intensiva se encunetra intimamente relacionado con el suministro y el costo de alimento, debido a que los cultivos intensivos de la trucha "Arco Iris" requieren alimentos con niveles elevados de proteinas y el costo de la fuente proteica es el determina las utilidades de produccion.
+## Las fuentes proteicas por su alto costo son las que determinan el precio del alimento balanceado por lo cual se deben considerar fuentes alternativas de alimentacion de bajo costos reñlativos y disponibilidad.
+
+
+
+```{r}
+Datos_1 <- read_excel("Datos.xlsx", sheet = "Hoja3")
+summary(Datos_1)
+```
+
+```{r}
+Datos_1$Dieta <- as.factor(Datos_1$Dieta)
+str(Datos_1)
+```
+
+
+```{r}
+ggplot(data = Datos_1, aes(x = Dieta, y = Pf )) + 
+  geom_bo()
+```
+
+
+```{r}
+pairs.panels(Datos_1[2:8], method = "spearman")
+```
+
+```{r}
+pairs.panels(Datos_1[9:14], method = "spearman")
+``` 
+
+
+```{r}
+Datos_1_new <- as.data.frame(Datos_1[,1:14])
+row.names(Datos_1_new) <- Datos_1$Fecha
+head(Datos_1_new)
+```
+ 
+ 
+ 
+
+```{r}
+mvn(Datos_1_new, univariateTest = "SW", tol = 1.51413e-60)
+```
+
