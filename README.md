@@ -18,7 +18,8 @@ También se evaluaron algunas variables fisico-quimicos presentes, para evidenci
 Para evaluar la mejor dieta en relacion al creciemiento de los individuos, se genero una tabla con 900 observaciones y 5 variables, en las cuales se contempla; estanques, peso inicial, longitud inicial, peso final, longitud final.
 Tambien queremos evaluar si los paramentos externos junto con la alimentacion influyen en el crecimientos de los ejemplares, por ende generamos una tabla con 1380 observaciones y 9 variables, de las cuales tenemos: temperatura, salinidad, porcentaje de saturacion, oxigeno disuelto, mortalidad y alimento suministrado.
 
-Objetivos:
+Objetivos
+
 Evaluar el crecimiento de los estanques de truchas en engorde con los diferentes tipos de dietas bajo condiciones de óptimas. 
 Estudiar el factor de condición corporal y su relación con los factores ambientales externos que puedan estar afectando.
 
