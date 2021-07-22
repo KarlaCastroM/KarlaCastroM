@@ -27,7 +27,5 @@ Hipotesis
 Las Dietas con reemplazo por aceites vegetales mantienen el peso de la truchas arcoíris en comparación a la dieta comercial habitual.
 Las Dietas con reemplazo por aceites vegetales aumentaron el peso de la truchas arcoíris en comparación a la dieta comercial habitual
 
-
-
 # Resumen de los métodos estadísticos utilizados.
 
