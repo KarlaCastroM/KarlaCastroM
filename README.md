@@ -24,10 +24,10 @@ Por ello, en este estudio se quiere responder si en el proceso de esmoltificacio
 # Resumen de los metodos estadisticos utilizados.
 En este proyecto se utilizo un test de correlacion de Pearson, para evaluar si existe correlacion entre el peso-longitud de nuestros datos.
 Se realizo una grafica de correlacion para saber que variables respuestas estaban correlacionadas.
-Luego con un analisis de componentes principales de descarto las variables con fuerte correlacion.
+Luego con un análisis de componentes principales de descarto las variables con fuerte correlación.
 Tambien para evaluar la influencia de las Variables predictoras (interaccion ATPasa-Salinidad) sobre la variables respuesta (Na+, K+, Cl-), se realizo el modelo lineal con efectos fijos sobre las variables respuestas.
-Se evaluaron los supuestos del moedelo.
-Tambien se realizo un modelo lineal para cada variable predictora sobre cada variable respuesta.
+Se evaluaron los supuestos del modelo.
+Tambien se realizó un modelo lineal para cada variable predictora sobre cada variable respuesta.
 Se eliminaron los outliers para descartar errores y se volvio a modelar.
 
 
